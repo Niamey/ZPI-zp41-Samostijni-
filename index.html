@@ -6,12 +6,18 @@
       </head>
 <body>
 
+
+    <h1 class="center">Красный заголовок по центру</h1>
+<p class="center">Красный параграф с выравниванием по центру.</p>
     <h1>Мій перший заголовок</h1>
     <p>Мій перший параграф.</p>
-
+    <h1 class="center">Цей заголовок буде чорним</h1>
+    <p class="center">Цей параграф буде чорним та буде по центру.</p>
+    <p class="center large">Цей парагнраф буде золотим</p>
     <h1>Це заголовок</h1>
     <p>Це параграф.</p>
-
+    <p id="para1">Hello World!</p>
+    <p>Этот параграф не зависит от стиля.</p>
     <h1>Це заголовок 1</h1>
     <h2>Це заголовок 2</h2>
     <h3>Це заголовок 3</h3>
@@ -489,7 +495,27 @@
     body {
   background-color: lightblue;
 }
+p.center {
+  text-align: center;
+  color: black;
+}
 
+
+h1 {
+  background-color: green;
+}
+
+div {
+  background-color: lightblue;
+}
+
+p {
+  background-color: yellow;
+}
+p.large {
+  font-size: 300%;
+  color: gold;
+}
 h1 {
   color: white;
   text-align: center;
@@ -530,6 +556,25 @@ p {
       text-align: left;
       padding: 8px;
     }
+
+
+    p {
+    color: red;
+    text-align: center;
+  } 
+   
+   /* Це
+   багаторядковий
+   коментар */
+   #para1 {
+  text-align: center;
+  color: green;
+}
+
+   .center {
+    text-align: center;
+    color: red;
+  }
     
     tr:nth-child(even) {
       background-color: #ddd;

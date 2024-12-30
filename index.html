@@ -3,10 +3,28 @@
     <head>
         <title>Заголовок сторінки</title>
         <link rel="icon" type="image/x-icon" href="/images/6954615_black cat_cat_fear_halloween_scary_icon.png">
+        <script src="https://kit.fontawesome.com/26e3ee569a.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
       </head>
 <body>
 
+    <i class="glyphicon glyphicon-cloud"></i>
+<i class="glyphicon glyphicon-remove"></i>
+<i class="glyphicon glyphicon-user"></i>
+<i class="glyphicon glyphicon-envelope"></i>
+<i class="glyphicon glyphicon-thumbs-up"></i>
+<i class="material-icons">cloud</i>
+<i class="material-icons">favorite</i>
+<i class="material-icons">attachment</i>
+<i class="material-icons">computer</i>
+<i class="material-icons">traffic</i>
 
+    <i class="fas fa-cloud"></i>
+    <i class="fas fa-heart"></i>
+    <i class="fas fa-car"></i>
+    <i class="fas fa-file"></i>
+    <i class="fas fa-bars"></i>
     <h1 class="center">Красный заголовок по центру</h1>
 <p class="center">Красный параграф с выравниванием по центру.</p>
     <h1>Мій перший заголовок</h1>
@@ -468,6 +486,24 @@
         <input type="email" id="email" name="email"><br><br>
         <input type="submit" value="Відправити">
       </form>
+      <h2>Властивість  border-style</h2>
+      <p>Властивість показує як відображаються межі</p>
+      
+      <p class="dotted">Крапкова  межа</p>
+      <p class="dashed">Пунктирна  межа.</p>
+      <p class="solid">Суцільна межа.</p>
+      <p class="double">Подвійна межа.</p>
+      <p class="groove">Рифлена  межа.</p>
+      <p class="ridge">Ребриста  межа.</p>
+      <p class="inset">Вставна  межа.</p>
+      <p class="outset">Опукла межа.</p>
+      <p class="none">Немає межа.</p>
+      <p class="hidden">Схована межа.</p>
+      <p class="mix">Комбінована межа.</p>
+      
+
+
+
   <style>
     a:link {
       color: green;
@@ -499,7 +535,13 @@ p.center {
   text-align: center;
   color: black;
 }
-
+div {
+    height: 200px;
+    border: 15px solid green;
+  width: 50%;
+  background-color: green;
+  opacity: 0.3;
+}
 
 h1 {
   background-color: green;
@@ -508,9 +550,10 @@ h1 {
 div {
   background-color: lightblue;
 }
-
+ 
 p {
   background-color: yellow;
+  margin: 25px 50px 75px 100px;
 }
 p.large {
   font-size: 300%;
@@ -557,7 +600,7 @@ p {
       padding: 8px;
     }
 
-
+  
     p {
     color: red;
     text-align: center;
@@ -579,6 +622,18 @@ p {
     tr:nth-child(even) {
       background-color: #ddd;
     }
+
+    p.dotted {border-style: dotted;}
+p.dashed {border-style: dashed;}
+p.solid {border-style: solid;}
+p.double {border-style: double;}
+p.groove {border-style: groove;}
+p.ridge {border-style: ridge;}
+p.inset {border-style: inset;}
+p.outset {border-style: outset;}
+p.none {border-style: none;}
+p.hidden {border-style: hidden;}
+p.mix {border-style: dotted dashed solid double;}
     </style>
 </body>
 </html>

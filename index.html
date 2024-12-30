@@ -502,8 +502,21 @@
       <p class="mix">Комбінована межа.</p>
       
 
+      <h1>The border-radius Property</h1>
+
+      <p>Rounded corners for an element with a specified background color:</p>
+      <p id="rcorners1">Rounded corners!</p>
+      <p>Rounded corners for an element with a border:</p>
+      <p id="rcorners2">Rounded corners!</p>
+      <p>Rounded corners for an element with a background image:</p>
+      <p id="rcorners3">Rounded corners!</p>
 
 
+      <h1>CSS Animation</h1>
+
+<div></div>
+
+<p><b>Note:</b> When an animation is finished, it goes back to its original style.</p>
   <style>
     a:link {
       color: green;
@@ -541,6 +554,8 @@ div {
   width: 50%;
   background-color: green;
   opacity: 0.3;
+  animation-name: example;
+  animation-duration: 4s;
 }
 
 h1 {
@@ -563,7 +578,14 @@ h1 {
   color: white;
   text-align: center;
 }
+ 
 
+@keyframes example {
+  0%   {background-color: red;}
+  25%  {background-color: yellow;}
+  50%  {background-color: blue;}
+  100% {background-color: green;}
+}
 p {
   font-family: verdana;
   font-size: 20px;
@@ -613,7 +635,9 @@ p {
   text-align: center;
   color: green;
 }
-
+a {
+  color: hotpink;
+}
    .center {
     text-align: center;
     color: red;
@@ -622,7 +646,13 @@ p {
     tr:nth-child(even) {
       background-color: #ddd;
     }
+    ul.a {
+  list-style-position: outside;
+}
 
+ul.b {
+  list-style-position: inside;
+}
     p.dotted {border-style: dotted;}
 p.dashed {border-style: dashed;}
 p.solid {border-style: solid;}
@@ -634,6 +664,33 @@ p.outset {border-style: outset;}
 p.none {border-style: none;}
 p.hidden {border-style: hidden;}
 p.mix {border-style: dotted dashed solid double;}
+
+
+
+#rcorners1 {
+  border-radius: 25px;
+  background: #73AD21;
+  padding: 20px; 
+  width: 200px;
+  height: 150px;  
+}
+
+#rcorners2 {
+  border-radius: 25px;
+  border: 2px solid #73AD21;
+  padding: 20px; 
+  width: 200px;
+  height: 150px;  
+}
+
+#rcorners3 {
+  border-radius: 25px;
+  background: url(paper.gif);
+  background-position: left top;
+  background-repeat: repeat;
+  padding: 20px; 
+  width: 200px;
+  height: 150px;  
     </style>
 </body>
 </html>

@@ -526,6 +526,24 @@
     <span class="tooltiptext">Tooltip text</span>
   </div>
 
+  <h2>Simple Pagination</h2>
+
+<div class="pagination">
+  <a href="#">&laquo;</a>
+  <a href="#">1</a>
+  <a href="#">2</a>
+  <a href="#">3</a>
+  <a href="#">4</a>
+  <a href="#">5</a>
+  <a href="#">6</a>
+  <a href="#">&raquo;</a>
+</div>
+
+<h1>Create Multiple Columns</h1>
+
+<div class="newspaper">
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.
+</div>
  
   <style>
     a:link {
@@ -607,7 +625,7 @@ h1 {
   position: absolute;
   z-index: 1;
 }
-
+ 
 .tooltip:hover .tooltiptext {
   visibility: visible;
 }
@@ -646,7 +664,9 @@ p {
   padding-left: 30px;
   padding-right: 40px;
     }
- 
+    .newspaper {
+  column-count: 3;
+}
     
     td, th {
       border: 1px solid #ddd;
@@ -675,6 +695,16 @@ a {
     color: red;
   }
     
+  .button {
+  background-color: #04AA6D; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
     tr:nth-child(even) {
       background-color: #ddd;
     }
@@ -696,7 +726,12 @@ p.outset {border-style: outset;}
 p.none {border-style: none;}
 p.hidden {border-style: hidden;}
 p.mix {border-style: dotted dashed solid double;}
-
+.pagination a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+}
 
 
 #rcorners1 {
@@ -714,7 +749,8 @@ p.mix {border-style: dotted dashed solid double;}
   width: 200px;
   height: 150px;  
 }
-
+.pagination {
+    display: inline-block;}
 #rcorners3 {
   border-radius: 25px;
   background: url(paper.gif);
@@ -723,6 +759,8 @@ p.mix {border-style: dotted dashed solid double;}
   padding: 20px; 
   width: 200px;
   height: 150px;  
-    </style>
+}
+    </style> 
 </body>
-</html>
+</html> 
+ 

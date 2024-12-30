@@ -64,7 +64,7 @@
   <p>Це параграф<br> з обривом рядка.</p>
   <a href="https://w3schoolsua.github.io/">Це посилання</a>       
   <p style="color:red">Це параграф червоного кольору.</p>
-
+  <div style="background-image: url('/images/noName.png');"> 
   <p>Це параграф.</p>
 <p>Це інший параграф.</p>
 <p>
@@ -92,7 +92,26 @@
 
   <a href="html_images.html">HTML Зображення</a>
 
+  <img src="/images/AI-business-tools.webp" alt="Italian Trulli">
+ 
+  <h2>Карти зображень</h2>
+<p>Клікніть на комп'ютер, телефон або чашку кави, щоб перейти на нову сторінку і дізнатися більше про тему:</p>
+  <img src="images/image.png" alt="Workplace" usemap="#workmap" width="400" height="379">
 
+  <map name="workmap">
+      <area shape="rect" coords="34,44,270,350" alt="Комп'ютер" href="html/computer.html">
+      <area shape="rect" coords="290,172,333,250" alt="Телефон" href="html/phone.html">
+      <area shape="circle" coords="337,300,44" alt="Чашка кофе" href="html/coffee.html">
+  </map>
+</div>
+
+<h2>Элемент picture</h2>
+
+<picture>
+  <source media="(min-width: 650px)" srcset=" /images/noName.png">
+  <source media="(min-width: 465px)" srcset="/images/faq1.jpeg">
+  <img src="../images/img_girl.jpg" style="width:auto;">
+</picture>
   <style>
     a:link {
       color: green;
